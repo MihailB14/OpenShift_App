@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi9/ubi:9.3-1552
+#FROM registry.access.redhat.com/ubi9/ubi:9.3-1552
+FROM registry.access.redhat.com/ubi8/openjdk-17
 
 USER root
 ENV HOME=/usr/app
