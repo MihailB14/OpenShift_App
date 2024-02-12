@@ -9,8 +9,9 @@ ADD . $HOME
 COPY . .
 
 # Install OpenJDK-8
-#RUN yum update -y && \
+RUN yum update -y && \
 #yum install -y java-1.8.0-openjdk-devel maven && \
+yum install maven
 #yum clean all
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk
