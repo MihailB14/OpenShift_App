@@ -29,7 +29,7 @@ RUN mvn -verison
 #Copy the rest of the code into the image
 
 # Build the application using Maven
-#RUN mvn clean package
+RUN mvn clean package
 
 #Starting command for the container
 #CMD ["java","-jar","/target/demo-0.0.1-SNAPSHOT.jar"]
