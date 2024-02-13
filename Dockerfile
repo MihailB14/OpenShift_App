@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi9/ubi:9.3-1552
+#FROM registry.access.redhat.com/ubi9/ubi:9.3-1552
+FROM registry.access.redhat.com/ubi8/openjdk-17
 
 USER root
 ENV HOME=/usr/app
@@ -28,7 +29,7 @@ RUN mvn -verison
 #Copy the rest of the code into the image
 
 # Build the application using Maven
- RUN mvn clean package --release
+ RUN mvn clean package
 
 #Starting command for the container
 #CMD ["java","-jar","/target/demo-0.0.1-SNAPSHOT.jar"]
