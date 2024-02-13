@@ -18,7 +18,7 @@ COPY . .
 #RUN mkdir -p /usr/app/.m2/repository && \
 #chmod -R 777 /usr/app/.m2
 
-#RUN mvn -verison
+RUN mvn -verison
 
 #RUN mvn clean package -e -X
 #RUN mvn -f /usr/app/pom.xml clean package
