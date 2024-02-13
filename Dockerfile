@@ -13,12 +13,12 @@ COPY . .
 #yum install -y java-1.8.0-openjdk-devel maven && \
 #yum clean all
 
-ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk
+#ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk
 
-RUN mkdir -p /usr/app/.m2/repository && \
+#RUN mkdir -p /usr/app/.m2/repository && \
 chmod -R 777 /usr/app/.m2
 
-RUN mvn -verison
+#RUN mvn -verison
 
 #RUN mvn clean package -e -X
 #RUN mvn -f /usr/app/pom.xml clean package
@@ -29,7 +29,7 @@ RUN mvn -verison
 #Copy the rest of the code into the image
 
 # Build the application using Maven
- RUN mvn clean package
+#RUN mvn clean package
 
 #Starting command for the container
 #CMD ["java","-jar","/target/demo-0.0.1-SNAPSHOT.jar"]
