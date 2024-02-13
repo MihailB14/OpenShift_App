@@ -16,7 +16,7 @@ COPY . .
 #ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk
 
 #RUN mkdir -p /usr/app/.m2/repository && \
-chmod -R 777 /usr/app/.m2
+#chmod -R 777 /usr/app/.m2
 
 #RUN mvn -verison
 
