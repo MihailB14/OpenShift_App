@@ -32,9 +32,9 @@ RUN mvn -verison
 RUN mvn clean package
 
 #Starting command for the container
-#CMD ["java","-jar","/target/demo-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","/target/demo-0.0.1-SNAPSHOT.jar"]
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
 
 #ENTRYPOINT jar -jar /app/runner.jar
 
